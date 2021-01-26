@@ -17,7 +17,7 @@ It is the intention to Finalise the KAKAPO project as such:
 
 ## EOIP MONITORING
 
-Project idea : using telemetry data on the routers and integrating scriping in the Linux Shell of the 4K9K infrastructure.
+Project idea : using telemetry data on the routers and integrating scripting in the Linux Shell of the 4K9K infrastructure.
 TBD
 
 
