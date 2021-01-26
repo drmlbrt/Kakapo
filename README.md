@@ -1,5 +1,7 @@
-# QosProjectEoIP
-EOIP AUTOMATION 
+# Kakapo project - EoIP automation & Monitoring
+
+## EOIP AUTOMATION 
+
 This project is created as a starter to automate changes to the deployed sites. 
 The DEV is development and should not be used for configuration changes. I only addedd the DEV so you can view running changes.
 The PROD is PRODUCTION -> this you should be able to use.
@@ -13,11 +15,18 @@ It is the intention to Finalise the KAKAPO project as such:
 - Working with YANG files -> BABY STEPS
 - Visualize in a Webpage environment -> BABY STEPS
 
+## EOIP MONITORING
 
-You need installation of:
+Project idea : using telemetry data on the routers and integrating scriping in the Linux Shell of the 4K9K infrastructure.
+TBD
+
+
+## Platform requirements:
 - python 3+
 - pip3
 - install the scripts modules (readable on the top)
+- Needed modules:
+    Connecting to Devices: NetMiko and Napalm
 - I use PyCharm for scripting
 
 Testing:
