@@ -1,9 +1,6 @@
 from napalm import get_network_driver
 import json
-from typing import Optional
 
-    from pprint import pprint
-    import json
 def connecttodevice(hostname, username, password):
 
 
