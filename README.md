@@ -17,6 +17,7 @@ It is the intention to Finalise the KAKAPO project as such:
 
 ## EOIP MONITORING
 
+Project idea : using telemetry data on the routers and integrating scriping in the Linux Shell of the 4K9K infrastructure.
 TBD
 
 
@@ -24,6 +25,8 @@ TBD
 - python 3+
 - pip3
 - install the scripts modules (readable on the top)
+- Needed modules:
+    Connecting to Devices: NetMiko and Napalm
 - I use PyCharm for scripting
 
 Testing:
