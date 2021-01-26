@@ -15,8 +15,12 @@ It is the intention to Finalise the KAKAPO project as such:
 - Working with YANG files -> BABY STEPS
 - Visualize in a Webpage environment -> BABY STEPS
 
+## EOIP MONITORING
 
-You need installation of:
+TBD
+
+
+## Platform requirements:
 - python 3+
 - pip3
 - install the scripts modules (readable on the top)
