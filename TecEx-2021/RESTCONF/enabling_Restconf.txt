@@ -1,0 +1,70 @@
+conf t
+ip http secure-server
+ip http authentication local
+restconf
+
+--- done
+============================================================================================================
+curl commands
+! Note -> curl is possibly part of the SBO computer
+from your SBO computer to the network.
+
+#What can my device deliver or talk to you with YANG files. Look at the NATIVE and IETF standards.
+curl -k https://10.242.1.92/restconf/data/netconf-state/capabilities -u "username:password"
+
+#Very short reply :-)
+curl -k https://10.242.1.92/restconf/ -u "username:password"
+
+curl -k https://10.242.1.92/restconf/data/Cisco-IOS-XE-native:native -u "username:password" #This is the all YANG -> takes a lot of time!
+
+curl -k https://10.242.1.92/restconf/data/Cisco-IOS-XE-native:native/interface -u "username:password"
+
+curl -k https://10.242.1.92/restconf/data/Cisco-IOS-XE-native:native/router -u "username:password"
+
+curl -k https://10.242.1.92/restconf/data/Cisco-IOS-XE-native:native/router/router-eigrp -u "username:password"
+
+curl -k https://10.242.1.92/restconf/data/ietf-interfaces:interfaces -u "username:password"
+============================================================================================================
+Now lets take the last !
+change it to an output accepting JSON
+curl -k https://10.242.1.92/restconf/data/netconf-state/capabilities -u "hannibal:hannibal" --header "Accept: application/yang-data+json"
+============================================================================================================
+=> download postmen and disable SSL verification, fill in the AUTHENTICATION with your device.
+=> This should deliver a nice JSON output :> with the curl command it plots a lot of text...
+=> follow the instructor or find some explanation on the wide internet.
+============================================================================================================
+Take it up "P"O"S"T"
+=> let's configure an interface :-)
+Take the output for the ietf-interfaces json. Look at the output of loopback0
+copy the entire 'dictionary'
+e.g:
+output set it on JSON and it creates something somwhere like this:
+{
+    "ietf-interfaces:interface": {
+                "name": "Loopback666",
+                "description": "THIS IS QUICKLY GENERATED",
+                "type": "iana-if-type:softwareLoopback",
+                "enabled": true,
+                "ietf-ip:ipv4": {
+                    "address": [
+                        {
+                            "ip": "66.66.66.66",
+                            "netmask": "255.255.255.255"
+                        }
+                    ]
+                },
+                "ietf-ip:ipv6": {}
+    }
+}
+I just copy pasted this from the previous 'GET' request and changed paramaters.
+AND : take a look at the JSON 'dictionary' formatting (Key-Value) pair.
+The reply in POSTMEN should be 201:
+
+Now verify and GET your config
+https://10.242.1.92/restconf/data/ietf-interfaces:interfaces/interface=Loopback666
+============================================================================================================
+PATCHING :-)
+============================================================================================================
+Try and change the latest created interface 'loopback666' in this example to what you like.
+let's try: "666 the number of the beast"
+============================================================================================================
