@@ -19,7 +19,7 @@ First, there is a big difference between IOS 15+ and IOS XE.
 The latter is more equipped and is focused upon automation. So, the first, IOS 15 is less performant. 
 However, there are some small gains to achieve though! 
 
-this small introduction is the perfect playground for you to discover automation. 
+This small introduction is the perfect playground.
 
 NAPALM!
 Start SMALL :-)
@@ -27,13 +27,14 @@ NAPALM is a collection of ready-made solutions. You just need to know how to use
 
 
 #####First step: boot up you Virtual Machine (Ubuntu 20.04 and your PyCharm)
+
 ######Open a new python file.
 Write the following code:
 
 `install python package NAPALM & json & pprint`
 
 
-S tart with:
+Start with:
 
 `from napalm import get_network_driver`
 
@@ -61,6 +62,7 @@ end with:
 `device.close()`
 
 What can our device deliver with NAPALM? 
+
 `get_method = dir(device)`
 `print(json.dumps(get_method, sort_keys=True, indent= 4))`
 
