@@ -7,32 +7,33 @@ In the near future you will come in contact with the new Cisco DNA development i
 
 ###### What is the learning trajectory
 
-I personally suggest finding a course that explains practical network automation. 
-This course will bring you in contact with Linux and Python script. Google is probably your best friend. 
+I suggest finding a course that explains practical network automation. 
+This course will bring you in contact with Linux and Python scripting. Google is probably your best friend. 
 My advice: start small, and that is what we will do today.
 
 ## Napalm
-For deployed networks automation at you local 'LAN' level is probably not a big issue. From the moment that you wan't to manage more than 10 devices, then automation is your friend.
-What can it do for you? 
+For deployed networks automation at you local 'LAN' level automation is probably not a big issue. From the moment that you want to manage more than 10 devices, then automation is your friend.
+But, what can it do for you? 
 
-the development is at the start small. There is a big difference between IOS 15+ and IOS XE. 
-The latter is more equipped and is advanced. So, the first, IOS 15 is less performant. 
-There are some small gains to achieve though!
+First, there is a big difference between IOS 15+ and IOS XE. 
+The latter is more equipped and is focused upon automation. So, the first, IOS 15 is less performant. 
+However, there are some small gains to achieve though! 
 
-It is the perfect playground for you to discover automation. 
+this small introduction is the perfect playground for you to discover automation. 
 
 NAPALM!
 Start SMALL :-)
 NAPALM is a collection of ready-made solutions. You just need to know how to use that NAPALM solution. So RTM (read-the-manual).
 
 
-First step: boot up you Virtual Machine (Ubuntu 20.04 and your PyCharm)
-Open a new python file.
+#####First step: boot up you Virtual Machine (Ubuntu 20.04 and your PyCharm)
+######Open a new python file.
+Write the following code:
 
 `install python package NAPALM & json & pprint`
 
 
-start with:
+S tart with:
 
 `from napalm import get_network_driver`
 
