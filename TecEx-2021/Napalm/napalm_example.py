@@ -26,6 +26,10 @@ for device_type, device in devices.items():
     print("\n ----- GET intefaces IP information  of the device -----")
     print(json.dumps(napalm_device.get_interfaces_ip(), sort_keys=True, indent=4))
 
+    print("\n ----- GET intefaces IP counters information  of the device -----")
+    print(json.dumps(napalm_device.get_interfaces_counters(), sort_keys=True, indent=4))
+
+
     print("\n ----- GET Running Config of the device -----")
     print(json.dumps(napalm_device.get_config(), sort_keys=True, indent=4))
 
