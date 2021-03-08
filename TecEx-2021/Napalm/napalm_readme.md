@@ -19,6 +19,17 @@ First, there is a big difference between IOS 15+ and IOS XE.
 The latter is more equipped and is focused upon automation. So, the first, IOS 15 is less performant. 
 However, there are some small gains to achieve though! 
 
+Play a game: 
+prepare the script, and ask someone to do at the same time some cli typing. Both should get and retreive the running config. 
+Well, you probably guessed it, the script will win.
+NAPALM performs the SSH for you, sends the command and parses it to your terminal. 
+These actions all happens in some seconds. 
+
+Furthermore, NAPALM claims to support multiple vendors. Read the NAPALM-YANG, and then you understand why. 
+
+
+
+
 This small introduction is the perfect playground.
 
 NAPALM!
@@ -81,3 +92,9 @@ Python scripting is able to parse the information to a readible format. It is no
 https://github.com/napalm-automation/napalm
 
 https://napalm.readthedocs.io/en/latest
+
+issues?
+SSH security issues? Look up: urrlib3
+at the top paste this code:
+`import urllib3
+urllib3.disable_warning(urllib3.exceptions.InsecureRequestWarning)`
