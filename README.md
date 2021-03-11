@@ -41,6 +41,7 @@ For PCN (CWIX) purpose we should be able to build a RESTCONF server that should 
 -   Have something of minimum security
 
 ####Requirements:
+
 -   YANG datamodel knowledge
 -   Abuse some GitHub respository that allows Python/Restconf calls (JETCONF is a valuable candidate, but hey this is already old?Not?)
 -   Be able to translate the YANG into JSON -> data validation
@@ -49,11 +50,14 @@ For PCN (CWIX) purpose we should be able to build a RESTCONF server that should 
 -   Telemetry
 
 ####Used tools:
+
 -   Python,
 -   Flask,
 -   Flask-Sqlalchemy,
 -   ... will add stuff along the way
+
 #####Installation in the terminal:
+
 Speed up the process with the 'prepare workstation in the tecex folder'!
    -  sudo apt-get install gcc make perl
    -  sudo apt-get install python3-pip
@@ -72,8 +76,8 @@ Speed up the process with the 'prepare workstation in the tecex folder'!
    -  sudo pip3 install psycopg2-binary
 
 
-
 ####Learning Track:
+
 -   Read the introduction on the Flask web page. It sets up quickly a RESTFUL server.
 
 Sincerely yours, 
