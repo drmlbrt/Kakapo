@@ -11,6 +11,7 @@ sudo pip3 install flask
 sudo pip3 install flask-sqlalchemy
 sudo pip3 install net-tools
 sudo pip3 install sqlite3
+sudo apt install sqlite3
 sudo pip3 install tabulate
 sudo pip3 install python-arptable
 sudo pip3 install flask-cors
