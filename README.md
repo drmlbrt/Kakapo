@@ -32,6 +32,28 @@ TBD
 Testing:
 Please use your development LAB environment prior real cfg pushing.
 
+## PCN RESTCONF SERVER
+
+Ok: Added or started on the next journey. 
+For PCN (CWIX) purpose we should be able to build a RESTCONF server that should deliver:
+-   Yang Structured data
+-   Respond to a request
+-   Have something of minimum security
+
+Requirements:
+-   YANG datamodel knowledge
+-   Abuse some GitHub respository that allows Python/Restconf calls (JETCONF is a valuable candidate, but hey this is already old?Not?)
+-   Be able to translate the YANG into JSON -> data validation
+-   Be able to store JSON information, after validation, into a database
+-   Visualize the requested information
+-   Telemetry
+
+Used tools:
+-   Python,
+-   Flask,
+-   Flask-Sqlalchemy,
+-   ... will add stuff along the way
+
 Sincerely yours, 
 
 SSDD
