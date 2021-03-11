@@ -1,23 +1,27 @@
 - id: 1
   ip_address: 10.242.1.92
-  name: Site-92
+  name: Site-092
   os: ios-xe
-  transport: napalm
   hostname: lab-isr-092
-  password: hannibal
-  username: hannibal
   vendor: cisco
-  sla_availability:
-  sla_response_time:
 
 - id: 2
   ip_address: 10.242.1.2
   name: Site-002
   os: ios
-  transport: napalm
   hostname: lab-isr-002
-  password: whateverworks
-  username: youthinkipostthisontheweb
   vendor: cisco
-  sla_availability:
-  sla_response_time:
+
+- id: 23
+  ip_address: 10.242.1.23
+  name: Site-023
+  os: ios
+  hostname: lab-isr-023
+  vendor: cisco
+
+- id: 81
+  ip_address: 10.242.1.81
+  name: Site-081
+  os: ios
+  hostname: lab-isr-081
+  vendor: cisco
