@@ -24,7 +24,7 @@ TBD
 ## Platform requirements:
 - python 3+
 - pip3
-- install the scripts modules (readable on the top)
+- Install the scripts modules (readable on the top)
 - Needed modules:
     Connecting to Devices: NetMiko and Napalm
 - I use PyCharm for scripting
@@ -40,7 +40,7 @@ For PCN (CWIX) purpose we should be able to build a RESTCONF server that should 
 -   Respond to a request
 -   Have something of minimum security
 
-Requirements:
+####Requirements:
 -   YANG datamodel knowledge
 -   Abuse some GitHub respository that allows Python/Restconf calls (JETCONF is a valuable candidate, but hey this is already old?Not?)
 -   Be able to translate the YANG into JSON -> data validation
@@ -48,11 +48,33 @@ Requirements:
 -   Visualize the requested information
 -   Telemetry
 
-Used tools:
+####Used tools:
 -   Python,
 -   Flask,
 -   Flask-Sqlalchemy,
 -   ... will add stuff along the way
+#####Installation in the terminal:
+Speed up the process with the 'prepare workstation in the tecex folder'!
+   -  sudo apt-get install gcc make perl
+   -  sudo apt-get install python3-pip
+   -  sudo apt-get install nodejs
+   -  sudo apt-get install git
+   -  sudo apt-get install ./google-chrome-stable_current_amd64.deb (download the latest version)[not mandatory]
+   -  sudo pip3 install flask
+   -  sudo pip3 install flask-sqlalchemy
+   -  sudo pip3 install net-tools
+   -  sudo pip3 install sqlite3
+   -  sudo pip3 install tabulate
+   -  sudo pip3 install python-arptable
+   -  sudo pip3 install flask-cors
+   -  sudo pip3 install napalm
+   -  sudo pip3 install ntplib
+   -  sudo pip3 install psycopg2-binary
+
+
+
+####Learning Track:
+-   Read the introduction on the Flask web page. It sets up quickly a RESTFUL server.
 
 Sincerely yours, 
 
