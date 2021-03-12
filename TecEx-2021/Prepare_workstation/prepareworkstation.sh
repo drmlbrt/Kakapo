@@ -24,6 +24,8 @@ echo "==========================================================="
 #Snap prepare workstation
 sudo snap install pycharm-community --classic
 sudo snap install postman
+sudo snap install snapd
+sudo snap install notepad-plus-plus
 echo "==========================================================="
 echo "===Preparing Telemetry workstation for monitoring      ===="
 echo "==========================================================="
